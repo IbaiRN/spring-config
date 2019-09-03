@@ -1,1 +1,6 @@
-
+server:    
+#  port: 8080
+eureka:        
+  instance:
+    leaseRenewalIntervalInSeconds: 5
+    leaseExpirationDurationInSeconds: 2

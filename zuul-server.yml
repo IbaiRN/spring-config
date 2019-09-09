@@ -7,6 +7,6 @@ zuul:
     socket-timeout-millis: 20000  
     routes:
       servicio1-zuul: # Service to create as sample
-        path: /serviciozuul1/** #path that will be intercepted
+        path: /test1/** #path that will be intercepted
         url: http://localhost:9010 #which url the request will e mapped to
         

@@ -7,6 +7,6 @@ zuul:
         path: /prueba/** #path that will be intercepted
         url: http://localhost:9010/prueba #which url the request will e mapped to
       servicio-conf: # Service to create as sample
-        path: /prueba/** #path that will be intercepted
+        path: /conf/** #path that will be intercepted
         url: http://localhost:9009/prueba #which url the request will e mapped to
         

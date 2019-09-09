@@ -4,6 +4,6 @@ zuul:
   ignoredServices: '*'
   routes:
       servicio1-zuul: # Service to create as sample
-        path: /test1/** #path that will be intercepted
-        url: http://localhost:9010 #which url the request will e mapped to
+        path: /prueba/** #path that will be intercepted
+        url: http://localhost:9010/prueba #which url the request will e mapped to
         

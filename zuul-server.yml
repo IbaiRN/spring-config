@@ -8,6 +8,6 @@ zuul:
     routes:
       servicio1-zuul: # Service to create as sample
         path: /serviciozuul1/** #path that will be intercepted
-        url: servicio1-zuul #which url the request will e mapped to
+        url: http://localhost:9010 #which url the request will e mapped to
         stripPrefix: false  #if zuul should replace the "/sample/" segment
         sensitiveHeaders:

@@ -10,4 +10,7 @@ zuul:
       servicio-conf: # Service to create as sample
         path: /conf/** #path that will be intercepted
         url: http://localhost:9009/prueba #which url the request will e mapped to
-        
+eureka:                  
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9999/eureka        

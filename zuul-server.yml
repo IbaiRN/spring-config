@@ -2,10 +2,7 @@ server:
   port: 8090 #puerto del zuul service 
 zuul:
   ignoredServices: '*'
-  host:    
-    connect-timeout-millis: 20000   
-    socket-timeout-millis: 20000  
-    routes:
+  routes:
       servicio1-zuul: # Service to create as sample
         path: /test1/** #path that will be intercepted
         url: http://localhost:9010 #which url the request will e mapped to

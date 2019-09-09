@@ -3,6 +3,7 @@ server:
 zuul:
   ignoredServices: '*'
   routes:
+      #cuidado si hay coincidencia de paths, porque en ese caso siempre tiene en cuenta el último de los servicios
       servicio1-zuul: # Service to create as sample
         path: /prueba/** #path that will be intercepted
         url: http://localhost:9010/prueba #which url the request will e mapped to

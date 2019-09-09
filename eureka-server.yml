@@ -1,6 +1,6 @@
 #configuracióbn del servidor eureka, lo mismo que es su yml pero sin el nombre
 server:
-  port: 8761
+  port: 9999
 
 eureka:
   client:

@@ -1,9 +1,0 @@
-server:      
-    port: 9009
-eureka:        
-  instance:
-    leaseRenewalIntervalInSeconds: 5
-    leaseExpirationDurationInSeconds: 2
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:9999/eureka

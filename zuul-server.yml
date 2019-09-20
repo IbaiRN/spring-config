@@ -4,11 +4,11 @@ zuul:
   ignoredServices: '*'
   routes:
       #cuidado si hay coincidencia de paths, porque en ese caso siempre tiene en cuenta el último de los servicios
-      servicio-personas: # Service to create as sample
+      servicio-vuelos: # Service to create as sample
         path: /personas/** #path that will be intercepted
         #url: http://localhost:10000/lista #which url the request will e mapped to
         serviceId: servicio-vuelos #/lista
-      servicio-hoteles: # Service to create as sample
+      servicio-reserva: # Service to create as sample
         path: /hoteles/** #path that will be intercepted
         #url: http://localhost:9000/hoteles #which url the request will e mapped to
         serviceId: servicio-reserva #/hoteles

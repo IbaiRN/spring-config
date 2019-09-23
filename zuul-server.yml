@@ -5,12 +5,12 @@ zuul:
   routes:
       #cuidado si hay coincidencia de paths, porque en ese caso siempre tiene en cuenta el último de los servicios
       servicio-vuelos: # Service to create as sample
-        path: /vuelos/** #path that will be intercepted
-        url: http://localhost:8081/lista #which url the request will be mapped to
+        path: /servicio-vuelos/** #path that will be intercepted
+        url: http://localhost:8081/vuelos/**, http://localhost:8081/**/** #which url the request will be mapped to
         serviceId: servicio-vuelos/vuelos
       servicio-reserva: # Service to create as sample
-        path: /reservar/** #path that will be intercepted
-        url: http://localhost:8080/hoteles #which url the request will be mapped to
+        path: /servicio-reserva/** #path that will be intercepted
+        url: http://localhost:8080/reservar/**, http://localhost:8080/reservas #which url the request will be mapped to
         serviceId: servicio-reserva/reservar
 eureka:                  
   client:

@@ -4,14 +4,14 @@ zuul:
   ignoredServices: '*'
   routes:
       #cuidado si hay coincidencia de paths, porque en ese caso siempre tiene en cuenta el último de los servicios
-      servicio-vuelos: # Service to create as sample
-        path: /servicio-vuelos/** #path that will be intercepted
-        # url: http://localhost:8081/vuelos/**, http://localhost:8081/**/** #which url the request will be mapped to
-        serviceId: servicio-vuelos/vuelos
-      servicio-reserva: # Service to create as sample
-        path: /servicio-reserva/** #path that will be intercepted
-        # url: http://localhost:8080/reservas #which url the request will be mapped to
-        serviceId: servicio-reserva/reservar
+      servicio-personas: # Service to create as sample
+        path: /personas/** #path that will be intercepted
+        #url: http://localhost:10000/lista #which url the request will e mapped to
+        serviceId: servicio-vuelos
+      servicio-hoteles: # Service to create as sample
+        path: /hoteles/** #path that will be intercepted
+        #url: http://localhost:9000/hoteles #which url the request will e mapped to
+        serviceId: servicio-hoteles
 eureka:                  
   client:
     serviceUrl:
